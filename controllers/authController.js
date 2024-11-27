@@ -216,8 +216,7 @@ const forgotPassword = async (req, res) => {
       to: email,
       subject: 'Verify Your Email',
       text: `Your OTP for verification is ${otp}. This code is valid for 10 minutes.`
-    };
-    await transporter.sendMail(mailOptions);
+    };  
 
     res.status(200).send({ success: true, message: "OTP sent to email" });
   } catch (error) {
