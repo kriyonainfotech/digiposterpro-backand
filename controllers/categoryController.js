@@ -316,7 +316,7 @@ const updatethumbnail = async(req,res) => {
 }
 const getDummyCategories = async(req,res) => {
   try {
-    const dummycategories = ['Good Morning','Business']
+    const dummycategories = ['Holi','Diwali', 'Republic Day', 'Christmas']
     return res.status(200).send({
       success: true,
       message: 'Categories retrieved successfully.',
