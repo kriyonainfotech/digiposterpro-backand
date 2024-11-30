@@ -8,7 +8,7 @@ const app = express()
 dotenv.config()
 ConnectDb()
 const corsOptions = {
-    origin: 'http://localhost:5173',  // Update with your client URL
+    origin: 'https://digiposterpro-admin-panel.vercel.app',  // Update with your client URL
     credentials: true, // This allows cookies to be sen 
 };
 app.use(cors(corsOptions));
